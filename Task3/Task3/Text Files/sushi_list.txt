@@ -1,0 +1,6 @@
+﻿Filadelfia 399 1000 -
+Asorti 399 1000 -
+Big_Cash 799 2000 -
+California 320 670 -
+Sayak_uramaki 314 480 -
+Red_Dragon 99 120 -

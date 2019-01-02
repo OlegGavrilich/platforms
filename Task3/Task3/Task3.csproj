@@ -111,5 +111,11 @@
     <Resource Include="Images\sayak.png" />
     <Resource Include="Images\YourList.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Text Files\NumberOfOrders.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Text Files\sushi_list.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
