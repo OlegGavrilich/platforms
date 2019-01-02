@@ -48,6 +48,7 @@
     <Compile Include="Classes and interfaces\Currency.cs" />
     <Compile Include="Classes and interfaces\File manager.cs" />
     <Compile Include="Classes and interfaces\IReadable.cs" />
+    <Compile Include="Classes and interfaces\PairOfCurrency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
