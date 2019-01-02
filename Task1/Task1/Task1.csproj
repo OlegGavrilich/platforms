@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes and interfaces\Conversion.cs" />
     <Compile Include="Classes and interfaces\ConverterToCurrencyName.cs" />
+    <Compile Include="Classes and interfaces\Currency.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
