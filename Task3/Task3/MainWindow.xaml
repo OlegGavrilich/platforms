@@ -4,9 +4,66 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task3"
+        xmlns:local2="clr-namespace:Task3.Classes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Sushi" Height="463.4" Width="1006.4" MaxWidth="1006.4" MaxHeight="463.4" MinWidth="1006.4" MinHeight="463.4" BorderThickness="0" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Window.CommandBindings>
+        <!--<CommandBinding Command="local2:CommandForButton.Del" Executed="Execute_Delete">-->
+        <CommandBinding Command="local2:CommandForButton.ToList" Executed="Execute_ToList"/>
+
+    </Window.CommandBindings>
+    <Grid Name="General_grid" Margin="0,0,-8,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/bg_new.jpg"></ImageBrush>
+        </Grid.Background>
+        <Image Margin="763,0,7,79" Source="Images/list_ob.png" Stretch="Fill"/>
+        <ListBox x:Name="buylist" HorizontalAlignment="Left" Height="299" Margin="794,33,0,0" VerticalAlignment="Top" Width="180" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFEC7505" FontFamily="Arial" FontSize="14" FontWeight="Bold">
+            <ListBox.Effect>
+                <DropShadowEffect Direction="250"/>
+            </ListBox.Effect>
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem  Header="Delete" Click="Execute_Delete"/>
+                </ContextMenu>
+
+            </ListBox.ContextMenu>
+        </ListBox>
+        <Image Source="Images/filadelfia_new.png"  HorizontalAlignment="Left" Height="122" Margin="10,28,0,0" VerticalAlignment="Top" Width="229" RenderTransformOrigin="0.486,0.51" Stretch="Fill"/>
+        <Image Source="Images/big cash.png" HorizontalAlignment="Left" Height="117" Margin="545,33,0,0" VerticalAlignment="Top" Width="220" Stretch="Fill" RenderTransformOrigin="0.777,0.494"/>
+        <Image Source="Images/asorti.png" HorizontalAlignment="Left" Height="117" Margin="277,28,0,0" VerticalAlignment="Top" Width="220" Stretch="Fill"/>
+        <Image Source="Images/california.png" HorizontalAlignment="Left" Height="117" Margin="10,215,0,0" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.642,0.372" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image Source="Images/sayak.png" HorizontalAlignment="Left" Height="117" Margin="277,215,0,0" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.642,0.372" Stretch="Fill"/>
+        <Image Source="Images/red dragon.png" HorizontalAlignment="Left" Height="117" Margin="545,215,0,0" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.642,0.372" Stretch="Fill"/>
+        <Button x:Name="butt1" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="20,28,0,0" VerticalAlignment="Top" Width="207" Height="117" Opacity="0"/>
+        <Button x:Name="butt2" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="277,28,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
+        <Button x:Name="butt3" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="545,33,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
+        <Button x:Name="butt4" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
+        <Button x:Name="butt5" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="277,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
+        <Button x:Name="butt6" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="545,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
+        <Label Content="Sum in UAH: " HorizontalAlignment="Left" Margin="816,308,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" Background="{x:Null}" Foreground="Red">
+            <Label.Effect>
+                <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <Image Margin="806,337,0,-5" Source="Images/MakeAnOrder.png" Stretch="Fill"/>
+        <Label x:Name="Sum1" Content="0" HorizontalAlignment="Left" Margin="905,308,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial" FontWeight="Bold" FontSize="14" Foreground="Red">
+            <Label.Effect>
+                <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="Order" Content="Images/Make an order" Click="Executr_Order" HorizontalAlignment="Left" Margin="818,349,0,0" VerticalAlignment="Top" Width="188" RenderTransformOrigin="0.702,0.5" Opacity="0" Height="83"/>
+        <Image Margin="828,-3,64,383" Source="Images/YourList.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-6.403"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+
     </Grid>
 </Window>

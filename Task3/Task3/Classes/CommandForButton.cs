@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace Task3.Classes
 {
-    class CommandForButton
+   public class CommandForButton
     {
         /// <summary>
         /// Button delete for get value
