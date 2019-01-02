@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="ShapesWPF" Height="450" Width="800">
+
+    <StackPanel>
+        <Canvas Height="20" >
+            <Menu x:Name="Menu_Shape" Width="50" Height="18" Canvas.Left="81">
+                <MenuItem x:Name="Menu_it" Header="_Shapes" Width="50" Height="18">
+                    <Canvas x:Name="can1" Height="0" Width="120"/>
+                    <Canvas x:Name="can2" Height="0" Width="120"/>
+                    <Canvas x:Name="can3" Height="0" Width="120"/>
+                    <Canvas x:Name="can4" Height="0" Width="120"/>
+                    <Canvas x:Name="can5" Height="0" Width="120"/>
+                    <Canvas x:Name="can6" Height="0" Width="120"/>
+                    <Canvas x:Name="can7" Height="0" Width="120"/>
+                    <Canvas x:Name="can8" Height="0" Width="120"/>
+                    <Canvas x:Name="can9" Height="0" Width="120"/>
+                    <Canvas x:Name="can10" Height="0" Width="120"/>
+                    <Canvas x:Name="can11" Height="0" Width="120"/>
+                    <Canvas x:Name="can12" Height="0" Width="120"/>
+                </MenuItem>
+                <MenuItem x:Name="s"></MenuItem>
+            </Menu>
+            <Menu Margin="0,0,755,0">
+                <MenuItem Header="_File" Width="30" Height="18" Click="MenuItem_Click">
+                    <MenuItem Header="_New" Click="MenuItem_Click"/>
+                    <MenuItem Header="_Open" Click="Open_Click"/>
+                    <MenuItem Header="_Save" Click="Save_Click"/>
+                </MenuItem>
+            </Menu>
+            <Menu Width="41" Height="18" Canvas.Left="35" >
+                <MenuItem Header="_Save" Width="41" Height="18" Click="MenuItem_Click_2"/>
+            </Menu>
+        </Canvas>
+        <Canvas x:Name="DrawCanvs" Height="400" Width="792" KeyDown="Keyboard_down" MouseRightButtonDown="DrawCanvas_MouseRightButtonDown" MouseLeftButtonDown="DrawCanvas_MouseLeftButtonDown" Opacity="10" Background="White" Margin="1,0,0.6,0" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.026"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="3.582"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <!--<Canvas
+            Height="400"
+            x:Name="bCanvas" HorizontalAlignment="Right"
+            Width="792">
+
+        </Canvas>-->
+    </StackPanel>
 </Window>
