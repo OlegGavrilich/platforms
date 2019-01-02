@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    interface IReadable
+    public interface IReadable
     {
         void Read(List<Currency> ls);
 

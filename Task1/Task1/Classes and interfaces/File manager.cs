@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    class File_manager
+    public class File_manager
     {
         public static bool Save(string filePath, Dictionary<CurrencyName, double> List)
         {

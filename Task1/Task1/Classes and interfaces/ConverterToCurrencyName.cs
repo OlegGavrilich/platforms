@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    class ConverterToCurrencyName
+    public class ConverterToCurrencyName
     {
         public static CurrencyName Convert(string toConvert)
         {

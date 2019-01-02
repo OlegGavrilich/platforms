@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    class Conversion
+    public class Conversion
     {
         public static Dictionary<CurrencyName, double> To(Dictionary<CurrencyName, double> List, CurrencyName Name)
         {

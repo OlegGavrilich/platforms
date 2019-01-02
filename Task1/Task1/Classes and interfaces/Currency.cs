@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    class Currency
+    public class Currency
     {
         public void Read(List<Currency> ls)
         {

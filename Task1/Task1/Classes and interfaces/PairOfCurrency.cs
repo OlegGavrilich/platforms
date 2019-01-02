@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1.Classes_and_interfaces
 {
-    class PairOfCurrency
+    public class PairOfCurrency
     {
         public static Dictionary<CurrencyName, double> DoPair(IEnumerable<Currency> List)
         {
