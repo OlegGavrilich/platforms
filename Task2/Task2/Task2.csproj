@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="MyPolygon.cs" />
     <Compile Include="PolygonCanvas.cs" />
+    <Compile Include="PolygonListChangedEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

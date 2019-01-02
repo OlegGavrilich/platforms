@@ -10,7 +10,7 @@ using System.Windows.Media;
 
 namespace Task2
 {
-   public class PolygonCanvas
+    public class PolygonCanvas
     {
         private Canvas canvas = new Canvas();
 
@@ -82,7 +82,7 @@ namespace Task2
                     Canvas.SetZIndex(this.currentPolygon.shape, 0);
                     //this.currentPolygon.shape.MouseLeftButtonDown -= this.Shape_MouseLeftButtonDown;
                     /*this.currentPolygon.shape.MouseLeftButtonUp -= this.Shape_MouseLeftButtonUp*/
-                    
+
                     this.currentPolygon.shape.MouseMove -= this.Shape_MouseMove;
                     this.currentPolygon.shape.Focusable = false;
                 }
