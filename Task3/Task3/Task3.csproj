@@ -117,5 +117,8 @@
   <ItemGroup>
     <Resource Include="Text Files\sushi_list.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Orders\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
